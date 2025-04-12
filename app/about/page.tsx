@@ -249,7 +249,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto">
           <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
             <Image
-              src="/DFW-MAP.jpg"
+              src="/DFW-Map.jpg"
               alt="UCB HVAC Service Area"
               width={800}
               height={450}

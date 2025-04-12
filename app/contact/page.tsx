@@ -65,7 +65,7 @@ export default function ContactPage() {
             <h2 className="text-2xl font-bold mb-6">Our Service Area</h2>
             <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
               <Image
-                src="/DFW-MAP.jpg"
+                src="/DFW-Map.jpg"
                 alt="UCB HVAC Location"
                 width={600}
                 height={400}
