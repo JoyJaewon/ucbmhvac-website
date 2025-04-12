@@ -57,3 +57,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Favicon fix */
+link[rel="icon"] {
+  object-fit: contain;
+  aspect-ratio: 1/1;
+}

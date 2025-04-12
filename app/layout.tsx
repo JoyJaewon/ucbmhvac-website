@@ -14,8 +14,13 @@ export const metadata: Metadata = {
     "Professional HVAC services for residential and commercial properties. Installation, repair, and maintenance by certified specialists.",
   generator: 'v0.dev',
   icons: {
-    icon: '/favicon.png',
-    apple: '/favicon.png',
+    icon: [
+      {
+        url: '/favicon.png',
+        sizes: '32x32',
+        type: 'image/png'
+      }
+    ]
   }
 }
 
@@ -26,10 +31,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/favicon.png" />
-        <link rel="apple-touch-icon" href="/favicon.png" />
-      </head>
       <body className={inter.className} suppressHydrationWarning>
         <Header />
         <main className="pt-20">{children}</main>
