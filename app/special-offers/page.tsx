@@ -36,7 +36,7 @@ const offers = [
       "5-year parts warranty",
     ],
     validUntil: "June 30, 2025",
-    image: "/placeholder.svg?height=200&width=400&query=new+air+conditioner+installation",
+    image: "/residential-hvac-install.png",
   },
   {
     id: 3,
@@ -53,7 +53,7 @@ const offers = [
       "Enhanced system efficiency",
     ],
     validUntil: "July 15, 2025",
-    image: "/placeholder.svg?height=200&width=400&query=air+duct+cleaning",
+    image: "/modern-climate-control.png",
   },
 ]
 

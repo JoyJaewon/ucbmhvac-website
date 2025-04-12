@@ -53,10 +53,10 @@ export default function HeroSlider() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white max-w-4xl px-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 animate-fade-in whitespace-nowrap">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 animate-fade-in">
                 {slide.title}
               </h1>
-              <p className="text-xl md:text-2xl mb-8 animate-fade-in-delay whitespace-nowrap">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8 animate-fade-in-delay">
                 {slide.description}
               </p>
             </div>
@@ -68,13 +68,13 @@ export default function HeroSlider() {
       <div className="absolute bottom-0 left-0 right-0 bg-white/90 py-6">
         <div className="container mx-auto px-4">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/quote">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg font-medium">
+            <Link href="/quote" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg font-medium">
                 Get Instant Quote
               </Button>
             </Link>
-            <Link href="/services">
-              <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-6 text-lg font-medium">
+            <Link href="/services" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="w-full border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-6 text-lg font-medium">
                 Our Services
               </Button>
             </Link>

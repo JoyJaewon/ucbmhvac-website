@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Twitter, Instagram, Linkedin, Phone, Mail, MapPin } from "lucide-react"
+import { Instagram, Phone, Mail, MapPin } from "lucide-react"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-block mb-4">
               <Image
-                src="/logo.png"
+                src="/ucbm-logo.png"
                 alt="UCBM HVAC Inc Logo"
                 width={150}
                 height={50}
@@ -20,21 +20,9 @@ export default function Footer() {
             </Link>
             <p className="text-gray-400 mb-4">Keeping you comfortable all year round</p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-400 hover:text-white">
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white">
+              <Link href="https://www.instagram.com/ucbmhvac" className="text-gray-400 hover:text-white">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white">
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
               </Link>
             </div>
           </div>
@@ -58,8 +46,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-400 hover:text-white">
-                  Blog
+                <Link href="/special-offers" className="text-gray-400 hover:text-white">
+                  Special Offers
                 </Link>
               </li>
               <li>
@@ -93,11 +81,6 @@ export default function Footer() {
                   New Construction
                 </Link>
               </li>
-              <li>
-                <Link href="/special-offer" className="text-gray-400 hover:text-white">
-                  Special Offers
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -106,15 +89,15 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-gray-400 mr-2" />
-                <span>(214) 555-1234</span>
+                <span>817-675-1031</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-gray-400 mr-2" />
-                <span>info@ucbmhvac.com</span>
+                <span>Junkim@ucbmhvac.com</span>
               </li>
               <li className="flex items-center">
                 <MapPin className="h-5 w-5 text-gray-400 mr-2" />
-                <span>123 Comfort Street, Dallas, TX 75201</span>
+                <span>3007 Skyway Cir N, Irving, TX 75038</span>
               </li>
             </ul>
           </div>

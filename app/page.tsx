@@ -51,28 +51,28 @@ export default function Home() {
       <HeroSlider />
 
       {/* Services Section */}
-      <section className="py-16 bg-white">
+      <section className="py-12 md:py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Services</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">Professional HVAC solutions for your comfort</p>
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold mb-2 md:mb-4">Our Services</h2>
+            <p className="text-sm md:text-base text-gray-600 max-w-2xl mx-auto">Professional HVAC solutions for your comfort</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <ServiceCard
-              icon={<Fan className="h-8 w-8 text-blue-600" />}
+              icon={<Fan className="h-6 w-6 md:h-8 md:w-8 text-blue-600" />}
               title="Installation"
               description="Expert installation of HVAC systems for residential and commercial properties."
               link="/services/cooling"
             />
             <ServiceCard
-              icon={<Wrench className="h-8 w-8 text-blue-600" />}
+              icon={<Wrench className="h-6 w-6 md:h-8 md:w-8 text-blue-600" />}
               title="Repair"
               description="Fast and reliable repair services for all types of HVAC systems."
               link="/services/heating"
             />
             <ServiceCard
-              icon={<ClipboardCheck className="h-8 w-8 text-blue-600" />}
+              icon={<ClipboardCheck className="h-6 w-6 md:h-8 md:w-8 text-blue-600" />}
               title="Maintenance"
               description="Regular maintenance to keep your HVAC system running efficiently."
               link="/services/air-duct"
@@ -82,21 +82,21 @@ export default function Home() {
       </section>
 
       {/* Customer Reviews Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-12 md:py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">What Our Customers Say</h2>
-            <p className="text-gray-600">Hear from our satisfied customers</p>
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold mb-2 md:mb-4">What Our Customers Say</h2>
+            <p className="text-sm md:text-base text-gray-600">Hear from our satisfied customers</p>
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <div className="text-center mb-6">
-                <div className="flex justify-center mb-4">
+            <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+              <div className="text-center mb-4 md:mb-6">
+                <div className="flex justify-center mb-2 md:mb-4">
                   {[...Array(5)].map((_, i) => (
                     <svg
                       key={i}
-                      className="w-5 h-5 text-yellow-400"
+                      className="w-4 h-4 md:w-5 md:h-5 text-yellow-400"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -105,29 +105,29 @@ export default function Home() {
                     </svg>
                   ))}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900">{reviews[currentReview].name}</h3>
+                <h3 className="text-lg md:text-xl font-semibold text-gray-900">{reviews[currentReview].name}</h3>
               </div>
-              <p className="text-gray-600 text-center italic text-lg leading-relaxed">
+              <p className="text-sm md:text-base text-gray-600 text-center italic leading-relaxed">
                 "{reviews[currentReview].text}"
               </p>
             </div>
 
-            <div className="flex justify-center mt-8 gap-4">
+            <div className="flex justify-center mt-6 md:mt-8 gap-4">
               <Button
                 variant="outline"
                 size="icon"
                 onClick={prevReview}
-                className="rounded-full h-12 w-12 hover:bg-gray-100"
+                className="rounded-full h-10 w-10 md:h-12 md:w-12 hover:bg-gray-100"
               >
-                <ChevronLeft className="h-6 w-6" />
+                <ChevronLeft className="h-5 w-5 md:h-6 md:w-6" />
               </Button>
               <Button
                 variant="outline"
                 size="icon"
                 onClick={nextReview}
-                className="rounded-full h-12 w-12 hover:bg-gray-100"
+                className="rounded-full h-10 w-10 md:h-12 md:w-12 hover:bg-gray-100"
               >
-                <ChevronRight className="h-6 w-6" />
+                <ChevronRight className="h-5 w-5 md:h-6 md:w-6" />
               </Button>
             </div>
           </div>
