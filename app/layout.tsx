@@ -12,7 +12,11 @@ export const metadata: Metadata = {
   title: "UCBM HVAC Inc - Keeping You Comfortable All Year Round",
   description:
     "Professional HVAC services for residential and commercial properties. Installation, repair, and maintenance by certified specialists.",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  }
 }
 
 export default function RootLayout({
@@ -22,6 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+      </head>
       <body className={inter.className} suppressHydrationWarning>
         <Header />
         <main className="pt-20">{children}</main>
